@@ -1,9 +1,9 @@
 import React from 'react'
-import Cocktail from './Cocktail'
+import Product from './Product'
 import Loading from './Loading'
 import { useGlobalContext } from '../context'
 
-const CocktailList = () => {
+const ProductList = () => {
   return (
     <div>
       <h2>cocktail list component</h2>
@@ -11,4 +11,4 @@ const CocktailList = () => {
   )
 }
 
-export default CocktailList
+export default ProductList

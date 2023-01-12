@@ -1,5 +1,5 @@
 import React from 'react'
-import CocktailList from '../components/CocktailList'
+import ProductList from '../components/ProductList'
 import SearchForm from '../components/SearchForm'
 
 const Home = () => {
