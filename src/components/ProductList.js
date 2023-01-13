@@ -11,7 +11,7 @@ const ProductList = () => {
   }
   if (!products.length) {
     return <h2 className='section-title'>
-      no phone matched your search ...
+      no product matched your search ...
     </h2>
   }
   return (

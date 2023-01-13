@@ -15,7 +15,6 @@ const AppProvider = ({ children }) => {
     try {
       const response = await axios.get(`${url}${searchTerm}`)
       const data = response.data.products
-      console.log(data)
       if (!data.length) {
         setproducts([])
         setloading(false)
