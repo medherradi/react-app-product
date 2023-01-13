@@ -42,9 +42,47 @@ const SingleProduct = () => {
   }
   const { title, description, price, rating, stock, brand, category, thumbnail } = product
   return (
-    <div>
-      <h2>{title}</h2>
-    </div>
+    <section className='section cocktail-section'>
+      <Link to='/' className='btn btn-primary'>
+        back home
+      </Link>
+      <h2 className='section-title'>{title}</h2>
+      <div className='drink'>
+        <img src={thumbnail} alt={title} />
+        <div className='drink-info'>
+          <p>
+            <span className='drink-data'>
+              {title}
+            </span>
+          </p>
+          <p>
+            <span className='drink-data'>
+              {price}
+            </span>
+          </p>
+          <p>
+            <span className='drink-data'>
+              {rating}
+            </span>
+          </p>
+          <p>
+            <span className='drink-data'>
+              {stock}
+            </span>
+          </p>
+          <p>
+            <span className='drink-data'>
+              {brand}
+            </span>
+          </p>
+          <p>
+            <span className='drink-data'>
+              {category}
+            </span>
+          </p>
+        </div>
+      </div>
+    </section>
   )
 }
 
