@@ -17,6 +17,7 @@ const AppProvider = ({ children }) => {
       const data = response.data.products
       console.log(data)
       if (!data.length) {
+        setproducts([])
         setloading(false)
       }
       setproducts(data)

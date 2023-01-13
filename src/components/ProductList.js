@@ -15,9 +15,14 @@ const ProductList = () => {
     </h2>
   }
   return (
-    <div>
-      <h2>cocktail list component</h2>
-    </div>
+    <section className='section'>
+      <h2 className='section-title'>List of Product</h2>
+      <div className='cocktails-center'>
+        {products.map((product) => {
+          return <Product key={product.id} product={product} />
+        })}
+      </div>
+    </section>
   )
 }
 
