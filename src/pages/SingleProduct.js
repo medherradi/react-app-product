@@ -52,33 +52,45 @@ const SingleProduct = () => {
         <div className='drink-info'>
           <p>
             <span className='drink-data'>
-              {title}
+              title :
             </span>
+            {title}
           </p>
           <p>
             <span className='drink-data'>
-              {price}
+              description :
             </span>
+            {description}
           </p>
           <p>
             <span className='drink-data'>
-              {rating}
+              price :
             </span>
+            ${price}
           </p>
           <p>
             <span className='drink-data'>
-              {stock}
+              rating :
             </span>
+            {rating} stars
           </p>
           <p>
             <span className='drink-data'>
-              {brand}
+              stock :
             </span>
+            {stock}
           </p>
           <p>
             <span className='drink-data'>
-              {category}
+              brand :
             </span>
+            {brand}
+          </p>
+          <p>
+            <span className='drink-data'>
+              category :
+            </span>
+            {category}
           </p>
         </div>
       </div>

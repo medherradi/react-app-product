@@ -186,6 +186,8 @@ Navbar
 
 .logo {
   width: 12rem;
+  font-weight: bold;
+  font-size: large;
 }
 
 /* 
