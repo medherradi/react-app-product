@@ -10,7 +10,7 @@ const AppProvider = ({ children }) => {
   const [searchTerm, setSearchTerm] = useState('')
   const [loading, setloading] = useState(true)
 
-  const fetchData = async () => {
+  const fetchData = useCallback(async () => {
     setloading(true)
     try {
       const response = await axios.get(`${url}${searchTerm}`)
@@ -26,11 +26,11 @@ const AppProvider = ({ children }) => {
       console.log(error)
       setloading(false)
     }
-  }
+  }, [searchTerm])
 
   useEffect(() => {
     fetchData()
-  }, [searchTerm])
+  }, [searchTerm, fetchData])
 
   return <AppContext.Provider value={{ products, loading, setSearchTerm, }}>
     {children}
